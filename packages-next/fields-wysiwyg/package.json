@@ -1,0 +1,32 @@
+{
+  "name": "@keystonejs-contrib-next/fields-wysiwyg",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "dist/fields-wysiwyg.cjs.js",
+  "module": "dist/fields-wysiwyg.esm.js",
+  "dependencies": {
+    "@babel/runtime": "^7.12.18",
+    "@keystone-next/admin-ui": "^9.0.0",
+    "@keystone-next/types": "^13.0.0",
+    "@keystone-ui/button": "^3.0.0",
+    "@keystone-ui/core": "^2.0.0",
+    "@keystone-ui/fields": "^2.0.0",
+    "@keystone-ui/pill": "^2.0.0",
+    "@keystonejs/fields-wysiwyg-tinymce": "^5.3.16",
+    "@tinymce/tinymce-react": "^3.10.1",
+    "@types/react": "^17.0.2",
+    "next": "^10.0.7",
+    "react": "^17.0.1",
+    "tinymce": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "preconstruct": {
+    "entrypoints": [
+      "index.ts",
+      "views/index.tsx"
+    ]
+  },
+  "repository": "https://github.com/keystone-contrib/keystone-contrib/tree/master/packages-next/fields-wysiwyg"
+}
