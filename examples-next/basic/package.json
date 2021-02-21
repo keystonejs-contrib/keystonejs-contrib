@@ -23,6 +23,7 @@
     "@keystone-ui/fields": "^2.0.0",
     "@keystone-ui/icons": "^2.0.0",
     "@keystone-ui/tooltip": "^2.0.0",
+    "@keystonejs-contrib-next/fields-ckeditor": "^0.0.0",
     "@keystonejs-contrib-next/fields-wysiwyg": "^0.0.0",
     "@preconstruct/next": "^2.0.0",
     "@types/react": "^17.0.2",

@@ -1,0 +1,35 @@
+{
+  "name": "@keystonejs-contrib-next/fields-ckeditor",
+  "description": "KeystoneJS CKEditor field type",
+  "version": "0.0.0",
+  "contributors": [
+    "The KeystoneJS Development Team",
+    "Abdelrahman Abdelrahman <abogical@gmail.com>"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.12.18",
+    "@ckeditor/ckeditor5-build-balloon-block": "^25.0.0",
+    "@ckeditor/ckeditor5-build-classic": "^25.0.0",
+    "@ckeditor/ckeditor5-react": "^3.0.1",
+    "@keystone-next/types": "^13.0.0",
+    "@keystone-ui/button": "^3.0.0",
+    "@keystone-ui/core": "^2.0.0",
+    "@keystone-ui/fields": "^2.0.0",
+    "@keystonejs-contrib/fields-ckeditor": "^1.0.0",
+    "next": "^10.0.7",
+    "react": "^17.0.1"
+  },
+  "preconstruct": {
+    "entrypoints": [
+      "index.ts",
+      "views/index.tsx"
+    ]
+  },
+  "main": "dist/fields-ckeditor.cjs.js",
+  "module": "dist/fields-ckeditor.esm.js",
+  "repository": "https://github.com/keystone-contrib/keystone-contrib/tree/master/packages-next/fields-ckeditor"
+}
