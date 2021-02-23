@@ -31,12 +31,12 @@ export const Field = ({
           onChange={(_, editor) => onChange(editor.getData())}
           data={value}
           disabled={isDisabled}
-          {...field.config?.editorConfig}
-          // onReady={(editor) => {
-          //   if (autoFocus) editor.editing.view.focus();
-          //   if (field.config?.editorConfig && field.config.editorConfig.onInit)
-          //     field.config?.editorConfig.onInit(editor);
-          // }}
+          {...field.editorConfig}
+          onReady={(editor) => {
+            if (autoFocus) editor.editing.view.focus();
+            if (field.editorConfig?.onInit)
+              field.editorConfig.onInit(editor);
+          }}
         />
       </div>
     </FieldContainer>

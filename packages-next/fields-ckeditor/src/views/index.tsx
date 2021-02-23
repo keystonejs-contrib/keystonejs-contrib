@@ -26,10 +26,11 @@ export const CardValue: CardValueComponent = ({ item, field }) => {
   );
 };
 
-export const controller = (config: FieldControllerConfig): FieldController<string, { config: { editorConfig: any } }> => {
+export const controller = (config: FieldControllerConfig<{ editorConfig: any }>): FieldController<string> & { editorConfig: any } => {
   return {
     path: config.path,
     label: config.label,
+    editorConfig: config.fieldMeta.editorConfig,
     graphqlSelection: config.path,
     defaultValue: '',
     deserialize(item) {
