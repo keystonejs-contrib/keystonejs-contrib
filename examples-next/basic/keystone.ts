@@ -1,6 +1,8 @@
 import { config } from '@keystone-next/keystone/schema';
 import { statelessSessions, withItemData } from '@keystone-next/keystone/session';
 import { createAuth } from '@keystone-next/auth';
+import { static as expressStatic } from 'express';
+import { dirname } from 'path';
 
 import { lists, extendGraphqlSchema } from './schema';
 
@@ -52,5 +54,12 @@ export default auth.withAuth(
     //   // store: redisSessionStore({ client: redis.createClient() }),
     //   secret: sessionSecret,
     // }),
+    server: {
+      //@ts-ignore
+      configureServer(app) {
+        const tinymcePath = dirname(require.resolve('tinymce'));
+        app.use('/tinymce-assets', expressStatic(tinymcePath));
+      },
+    },
   })
 );
