@@ -37,7 +37,7 @@
     "dotenv-safe": "^8.1.0",
     "express": "^4.17.1",
     "multer": "^1.4.2",
-    "pug": "^3.0.0",
+    "pug": "^3.0.1",
     "react": "^17.0.1",
     "terminal-link": "^2.1.1"
   },
