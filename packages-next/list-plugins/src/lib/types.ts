@@ -1,9 +1,9 @@
-import { BaseGeneratedListTypes, FieldConfig, ListHooks } from '@keystone-next/types';
+import { BaseGeneratedListTypes, CommonFieldConfig, ListHooks } from '@keystone-next/types';
 
 export type ListTrackingOptions = {
   created?: boolean;
   updated?: boolean;
-} & FieldConfig<BaseGeneratedListTypes>;
+} & CommonFieldConfig<BaseGeneratedListTypes>;
 
 export type AtTrackingOptions = {
   createdAtField?: string;
@@ -17,4 +17,3 @@ export type ByTrackingOptions = {
 } & ListTrackingOptions;
 
 export type ResolveInputHook = ListHooks<BaseGeneratedListTypes>['resolveInput'];
-
