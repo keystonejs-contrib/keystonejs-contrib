@@ -33,7 +33,7 @@
     "cross-env": "^7.0.3",
     "date-fns": "^2.22.1",
     "dotenv-safe": "^8.1.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "multer": "^1.4.2",
     "pug": "^3.0.2",
     "react": "^17.0.2",
