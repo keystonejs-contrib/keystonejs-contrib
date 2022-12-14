@@ -8,7 +8,7 @@
     "node": ">=8.4.0"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   },
   "repository": "https://github.com/keystone-contrib/keystone-contrib/tree/master/packages/app-express"
 }
